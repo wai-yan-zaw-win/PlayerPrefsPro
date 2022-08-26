@@ -8,7 +8,7 @@ The syntax is actually the same as [PlayerPrefs](https://docs.unity3d.com/Script
 
 # Some Examples
 
-## Booleans :
+## ✷ Booleans :
 ```c#
 bool testBoolean = true;
 bool resultBoolean;
