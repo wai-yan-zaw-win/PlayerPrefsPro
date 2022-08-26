@@ -129,6 +129,6 @@ You can contact me via waiyanzawwinstar8@gmail.com.
 
 <br />
 
-[facebook]: https://www.facebook.com/WaiYanZawWin.Leo
-[instagram]: https://www.instagram.com/waiyanzawwin0_0
-[linkedin]: https://www.linkedin.com/in/wai-yan-zaw-win
+[facebook]: https://www.facebook.com/WaiYanZawWin.Leo/
+[instagram]: https://www.instagram.com/waiyanzawwin0_0/
+[linkedin]: https://www.linkedin.com/in/wai-yan-zaw-win/
