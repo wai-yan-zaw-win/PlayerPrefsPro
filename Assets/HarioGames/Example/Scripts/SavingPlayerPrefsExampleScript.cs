@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HarioGames.PlayerPrefsPro;
-using System;
+
+/*TO DO :
+ * Need to fix enum saving.
+ */
 
 public class SavingPlayerPrefsExampleScript : MonoBehaviour
 {
@@ -16,8 +19,9 @@ public class SavingPlayerPrefsExampleScript : MonoBehaviour
     public ushort number_short_unsigned = 8;
 
     public Vector3 vector3 = Vector3.one;
+    public bool testBool = true;
     public Quaternion quaternion = Quaternion.identity;
-    public Color32 testColor = Color.white;
+    public Color testColor = Color.white;
     public TestEnum testEnum = TestEnum.enum3;
 
     public MyClass testClass = new MyClass(123, "Leo");
@@ -33,8 +37,9 @@ public class SavingPlayerPrefsExampleScript : MonoBehaviour
     public ushort result_number_short_unsigned;
 
     public Vector3 result_vector3;
+    public bool result_bool;
     public Quaternion result_quaternion;
-    public Color32 result_testColor;
+    public Color result_testColor;
     public TestEnum result_testEnum;
 
     public MyClass result_testClass;
@@ -94,6 +99,7 @@ public class SavingPlayerPrefsExampleScript : MonoBehaviour
 
         //Saving Objects and Classes
         PlayerPrefsPro.Save("Test_Vector3", vector3);
+        PlayerPrefsPro.Save("Test_Bool", testBool);
         PlayerPrefsPro.Save("Test_Quaternion", quaternion);
         PlayerPrefsPro.Save("Test_Color", testColor);
         PlayerPrefsPro.Save("Test_Enum", testEnum);
@@ -119,12 +125,13 @@ public class SavingPlayerPrefsExampleScript : MonoBehaviour
         //Saving Objects and Classes
         result_vector3 = PlayerPrefsPro.Load<Vector3>("Test_Vector3");
         result_quaternion = PlayerPrefsPro.Load<Quaternion>("Test_Quaternion");
-        result_testColor= PlayerPrefsPro.Load<Color32>("Test_Color");
+        result_testColor = PlayerPrefsPro.Load<Color>("Test_Color");
 
+        result_bool = PlayerPrefsPro.Load<bool>("Test_Bool");
         result_testEnum = PlayerPrefsPro.Load<TestEnum>("Test_Enum");
 
         result_testClass = PlayerPrefsPro.Load<MyClass>("Test_Class");
-        result_testClassList= PlayerPrefsPro.Load<List<MyClass>>("Test_List_Class");
+        result_testClassList = PlayerPrefsPro.Load<List<MyClass>>("Test_List_Class");
 
         //Loading Encrypted Datas
         result_testClass = PlayerPrefsPro.EncryptedLoad<MyClass>("Encrypted_Test_Class");
