@@ -47,3 +47,22 @@ resultColor = PlayerPrefsPro.Load<Color>("Test_Color"); //Without providing defa
 resultColor32 = PlayerPrefsPro.Load("Test_Color32", Color.black); //With default value
 resultColor32 = PlayerPrefsPro.Load<Color32>("Test_Color32"); //Without providing default value
 ```
+
+## ✷ Vector3 and Quaternion :
+```c#
+Vector3 testVector3 = Vector3.one;
+Vector3 resultVector3;
+
+Quaternion testQuaternion = Quaternion.identity;
+Quaternion resultQuaternion;
+
+//Save
+PlayerPrefsPro.Save("Test_Vector3", testVector3); //"Test_Vector3" is the key to store data because PlayerPrefs need a key to store data.
+PlayerPrefsPro.Save("Test_Quaternion", testQuaternion); //"Test_Quaternion" is the key to store data because PlayerPrefs need a key to store data.
+
+//Load
+resultVector3 = PlayerPrefsPro.Load("Test_Vector3", Vector3.zero); //With default value
+resultVector3 = PlayerPrefsPro.Load<Vector3>("Test_Vector3"); //Without providing default value
+resultQuaternion = PlayerPrefsPro.Load("Test_Quaternion", Quaternion.identity); //With default value
+resultQuaternion = PlayerPrefsPro.Load<Quaternion>("Test_Quaternion"); //Without providing default value
+```
