@@ -13,6 +13,8 @@ using HarioGames.PlayerPrefsPro;
 
 # Some Examples
 
+An example script is provided in the package and here are some examples of saving and loading datas with PlayerPrefsPro.
+
 ## ✷ Booleans :
 ```c#
 bool testBoolean = true;
