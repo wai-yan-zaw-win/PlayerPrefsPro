@@ -119,7 +119,7 @@ resultClass = PlayerPrefsPro.Load<MyClass>("Test_Class"); //Without providing de
 
 # Contacts : 
 
-You can contact me via [gmail](waiyanzawwinstar8@gmail.com).
+You can contact me via waiyanzawwinstar8@gmail.com.
 
 ## Social Medias :
 
